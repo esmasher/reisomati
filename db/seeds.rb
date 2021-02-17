@@ -6,9 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
+
 User.destroy_all
 Destination.destroy_all
 Itinerary.destroy_all
+
 10.times do
     User.create(
         name: Faker::Name.unique.name,
@@ -17,24 +19,36 @@ Itinerary.destroy_all
         email: Faker::Internet.safe_email
     )
 end
-Destination.create(city: "Berlin", hotel: "Hotel of Berlin" , restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Dubai", hotel: "Hotel of Dubai", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Phuket", hotel: "Hotel of Phuket", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Paris", hotel: "Hotel of Paris", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Cape Town", hotel: "Hotel of Cape Town", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Tokyo", hotel: "Hotel of Tokyo", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Auckland", hotel: "Hotel of Auckland", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Cario", hotel: "Hotel of Cario", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Buenos Aires", hotel: "Hotel of Buenos Aires", restaurant: Faker::Restaurant.unique.name)
-Destination.create(city: "Bishkek", hotel: "Hotel of Bishkek", restaurant: Faker::Restaurant.unique.name)
+
+hotel = ["hotel 1", "hotel 2"]
+
+Destination.create(city: "Berlin", hotel: "Hotel of Berlin" , restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108207143-f7633980-70ec-11eb-9be1-5508b1451a74.jpeg", language: "German", population: "3.6 million")
+Destination.create(city: "Dubai", hotel: "Hotel of Dubai", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108207610-9daf3f00-70ed-11eb-8673-cf0504d958bf.jpg", language: "Arabic", population: "3.3 million")
+Destination.create(city: "Phuket", hotel: "Hotel of Phuket", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208200-56757e00-70ee-11eb-83e0-e6c69faa2ea8.jpg", language: "Thai", population: "416 Thousand")
+Destination.create(city: "Paris", hotel: "Hotel of Paris", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208237-655c3080-70ee-11eb-8af6-df5cc2cabd87.jpg", language: "French", population: "2.1 million")
+Destination.create(city: "Cape Town", hotel: "Hotel of Cape Town", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208285-73aa4c80-70ee-11eb-86d9-968bc902d281.jpg", language: "English", population: "4.5 million")
+Destination.create(city: "Tokyo", hotel: "Hotel of Tokyo", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208755-0fd45380-70ef-11eb-9cdb-a114cbdc15f4.jpg", language: "Japanese", population: "9.3 million")
+Destination.create(city: "Auckland", hotel: "Hotel of Auckland", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208794-1d89d900-70ef-11eb-827d-c90df7e59fc8.jpg", language: "English", population: "1.6 million")
+Destination.create(city: "Cario", hotel: "Hotel of Cario", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208887-372b2080-70ef-11eb-8b72-3e02c15ac55c.jpg", language: "Arabic", population: "9.1 million")
+Destination.create(city: "Buenos Aires", hotel: "Hotel of Buenos Aires", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208826-2a0e3180-70ef-11eb-88dd-0c90d390fed8.jpg", language: "Spanish", population: "15.1 million")
+Destination.create(city: "Bishkek", hotel: "Hotel of Bishkek", restaurant: Faker::Restaurant.unique.name, image: "https://user-images.githubusercontent.com/73184313/108208555-cbe14e80-70ee-11eb-87d5-3515084251fd.png", language: "Russian", population: "1 million")
+
+
+
 user_id = User.all.map { |user| user.id }
 destination_id = Destination.all.map { |destination| destination.id }
+
+
 10.times do
     Itinerary.create(
         user_id: user_id.sample,
         destination_id: destination_id.sample
     )
 end
+
+
+
+puts "After successfully seeding: "
 puts "#{User.all.count} users"
 puts "#{Destination.all.count} destinations"
 puts "#{Itinerary.all.count} itineraries"
