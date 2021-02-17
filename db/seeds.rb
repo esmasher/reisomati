@@ -74,8 +74,6 @@ end
 
 
 
-<<<<<<< HEAD
-=======
 
 
 
@@ -128,7 +126,6 @@ Review.create(hotel_id: 1, comment: "Great Stay at the Ritz-Carlton Berlin, the 
 
 
 
->>>>>>> b9f2b0f3efe3d43ac0326965a78b138c3884d78f
 puts "After successfully seeding: "
 puts "#{User.all.count} users"
 puts "#{Destination.all.count} destinations"
