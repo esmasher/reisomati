@@ -2,7 +2,7 @@ class DestinationsController < ApplicationController
 
     def index
         destinations = Destination.all
-        render json: destinations, include: [:city, :restaurant, :hotels, :image]
+        render json: destinations
     end
 
     def show

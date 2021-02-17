@@ -54,17 +54,51 @@ end
 
 
 
-Hotel.create(destination_id: 1, rating: "5 stars", review: [], name: "The Ritz-Carlton, Berlin" )
-Hotel.create(destination_id: 1, rating: "4 stars", review: [], name: "Hotel Zoo Berlin")
-Hotel.create(destination_id: 1, rating: "5 stars", review: [], name: "SO/ Berlin Das Stue")
+Hotel.create(destination_id: 1, rating: "5 stars", name: "The Ritz-Carlton, Berlin" )
+Hotel.create(destination_id: 1, rating: "4 stars", name: "Hotel Zoo Berlin")
+Hotel.create(destination_id: 1, rating: "5 stars", name: "SO/ Berlin Das Stue")
 
-Hotel.create(destination_id: 2, rating: "4 stars", review: [], name: "Burj Al Arab" )
-Hotel.create(destination_id: 2, rating: "4 stars", review: [], name: "W Dubai The Palm")
-Hotel.create(destination_id: 2, rating: "5 stars", review: [], name: "Palazzo Versace Dubai")
+Hotel.create(destination_id: 2, rating: "4 stars", name: "Burj Al Arab" )
+Hotel.create(destination_id: 2, rating: "4 stars", name: "W Dubai The Palm")
+Hotel.create(destination_id: 2, rating: "5 stars", name: "Palazzo Versace Dubai")
 
-Hotel.create(destination_id: 3, rating: "3 stars", review: [], name: "Novotel Phucket City" )
-Hotel.create(destination_id: 3, rating: "4 stars", review: [], name: "Woo Gallery and Botique Hotel")
-Hotel.create(destination_id: 3, rating: "5 stars", review: [], name: "The Blanket")
+Hotel.create(destination_id: 3, rating: "3 stars", name: "Novotel Phucket City" )
+Hotel.create(destination_id: 3, rating: "4 stars", name: "Woo Gallery and Botique Hotel")
+Hotel.create(destination_id: 3, rating: "5 stars", name: "The Blanket")
+
+Hotel.create(destination_id: 4, rating: "5 stars", name: "Hôtel des Grands Hommes" )
+Hotel.create(destination_id: 4, rating: "4 stars", name: "Pullman Paris Eiffel Tower")
+Hotel.create(destination_id: 4, rating: "5 stars", name: "Four Seasons Hotel George V, Paris")
+
+Hotel.create(destination_id: 5, rating: "4 stars", name: "The Bay Hotel" )
+Hotel.create(destination_id: 5, rating: "4 stars", name: "One and Only Cape Town")
+Hotel.create(destination_id: 5, rating: "4 stars", name: "Cape Town Marriott Hotel Crystal Towers")
+
+Hotel.create(destination_id: 6, rating: "5 stars", name: "Aman Tokyo" )
+Hotel.create(destination_id: 6, rating: "5 stars", name: "Shinjuku Granbell Hotel")
+Hotel.create(destination_id: 6, rating: "5 stars", name: "Shangri-La Hotel, Tokyo")
+
+Hotel.create(destination_id: 7, rating: "3 stars", name: "Hilton Auckland" )
+Hotel.create(destination_id: 7, rating: "4 stars", name: "The Grand By SkyCity")
+Hotel.create(destination_id: 7, rating: "5 stars", name: "Hotel DeBrett")
+
+Hotel.create(destination_id: 8, rating: "4 stars", name: "The St. Regis, Cairo" )
+Hotel.create(destination_id: 8, rating: "4 stars", name: "Dusit Thani LakeView Cairo")
+Hotel.create(destination_id: 8, rating: "5 stars", name: "The Nile Ritz-Carlton, Cairo")
+
+Hotel.create(destination_id: 9, rating: "4 stars", name: "Four Seasons Hotel Buenos Aires" )
+Hotel.create(destination_id: 9, rating: "4 stars", name: "Alvear Palace Hotel")
+Hotel.create(destination_id: 9, rating: "5 stars", name: "Algodon Mansion")
+
+Hotel.create(destination_id: 10, rating: "3 stars", name: "Park Hotel" )
+Hotel.create(destination_id: 10, rating: "3 stars", name: "Golden Tulip Bishkek Hotel")
+Hotel.create(destination_id: 10, rating: "4 stars", name: "Plaza Hotel Bishkek")
+
+Review.create(hotel_id: 1, comment: "Great Stay at the Ritz-Carlton Berlin, the staff was friendly and the rooms were clean")
+
+
+
+
 
 
 puts "After successfully seeding: "
@@ -72,3 +106,4 @@ puts "#{User.all.count} users"
 puts "#{Destination.all.count} destinations"
 puts "#{Itinerary.all.count} itineraries"
 puts "#{Hotel.all.count} Hotels"
+puts "#{Review.all.count} reviews"
