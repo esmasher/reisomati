@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2021_02_17_174614) do
+=======
+ActiveRecord::Schema.define(version: 2021_02_17_185022) do
+>>>>>>> b9f2b0f3efe3d43ac0326965a78b138c3884d78f
 
   create_table "destinations", force: :cascade do |t|
     t.string "city"
@@ -24,6 +28,15 @@ ActiveRecord::Schema.define(version: 2021_02_17_174614) do
     t.string "population"
   end
 
+  create_table "hotels", force: :cascade do |t|
+    t.integer "destination_id", null: false
+    t.string "rating"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
+    t.index ["destination_id"], name: "index_hotels_on_destination_id"
+  end
+
   create_table "itineraries", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "destination_id", null: false
@@ -35,6 +48,7 @@ ActiveRecord::Schema.define(version: 2021_02_17_174614) do
     t.index ["user_id"], name: "index_itineraries_on_user_id"
   end
 
+<<<<<<< HEAD
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
     t.string "cuisine"
@@ -42,6 +56,14 @@ ActiveRecord::Schema.define(version: 2021_02_17_174614) do
     t.integer "destination_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+=======
+  create_table "reviews", force: :cascade do |t|
+    t.integer "hotel_id", null: false
+    t.text "comment"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["hotel_id"], name: "index_reviews_on_hotel_id"
+>>>>>>> b9f2b0f3efe3d43ac0326965a78b138c3884d78f
   end
 
   create_table "users", force: :cascade do |t|
@@ -54,6 +76,8 @@ ActiveRecord::Schema.define(version: 2021_02_17_174614) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "hotels", "destinations"
   add_foreign_key "itineraries", "destinations"
   add_foreign_key "itineraries", "users"
+  add_foreign_key "reviews", "hotels"
 end

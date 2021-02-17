@@ -2,13 +2,11 @@ class DestinationsController < ApplicationController
 
     def index
         destinations = Destination.all
-        render json: destinations, include: [:city, :restaurant, :hotel, :image]
+        render json: destinations
     end
 
     def show
         destination = Destination.find_by(id: params[:id])
         render json: destination
     end
-
-   
 end
