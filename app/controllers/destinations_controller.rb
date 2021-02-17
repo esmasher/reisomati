@@ -4,4 +4,9 @@ class DestinationsController < ApplicationController
         destinations = Destination.all
         render json: destinations, include: [:city, :restaurant, :hotel]
     end
+
+    def show
+        destination = Destination.find_by(id: params[:id])
+        render json: destination, include: [:city, :restaurant, :hotel]
+    end
 end
