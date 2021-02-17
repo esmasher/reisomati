@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_17_132214) do
+ActiveRecord::Schema.define(version: 2021_02_17_160521) do
 
   create_table "destinations", force: :cascade do |t|
     t.string "city"
@@ -22,6 +22,16 @@ ActiveRecord::Schema.define(version: 2021_02_17_132214) do
     t.string "image"
     t.string "language"
     t.string "population"
+  end
+
+  create_table "hotels", force: :cascade do |t|
+    t.integer "destination_id", null: false
+    t.string "rating"
+    t.string "review"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
+    t.index ["destination_id"], name: "index_hotels_on_destination_id"
   end
 
   create_table "itineraries", force: :cascade do |t|
@@ -45,6 +55,7 @@ ActiveRecord::Schema.define(version: 2021_02_17_132214) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "hotels", "destinations"
   add_foreign_key "itineraries", "destinations"
   add_foreign_key "itineraries", "users"
 end

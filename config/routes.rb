@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :hotels
   resources :itineraries
   resources :destinations
   resources :users

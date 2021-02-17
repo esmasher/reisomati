@@ -48,7 +48,27 @@ end
 
 
 
+
+
+
+
+
+
+Hotel.create(destination_id: 1, rating: "5 stars", review: [], name: "The Ritz-Carlton, Berlin" )
+Hotel.create(destination_id: 1, rating: "4 stars", review: [], name: "Hotel Zoo Berlin")
+Hotel.create(destination_id: 1, rating: "5 stars", review: [], name: "SO/ Berlin Das Stue")
+
+Hotel.create(destination_id: 2, rating: "4 stars", review: [], name: "Burj Al Arab" )
+Hotel.create(destination_id: 2, rating: "4 stars", review: [], name: "W Dubai The Palm")
+Hotel.create(destination_id: 2, rating: "5 stars", review: [], name: "Palazzo Versace Dubai")
+
+Hotel.create(destination_id: 3, rating: "3 stars", review: [], name: "Novotel Phucket City" )
+Hotel.create(destination_id: 3, rating: "4 stars", review: [], name: "Woo Gallery and Botique Hotel")
+Hotel.create(destination_id: 3, rating: "5 stars", review: [], name: "The Blanket")
+
+
 puts "After successfully seeding: "
 puts "#{User.all.count} users"
 puts "#{Destination.all.count} destinations"
 puts "#{Itinerary.all.count} itineraries"
+puts "#{Hotel.all.count} Hotels"
