@@ -10,8 +10,5 @@ class DestinationsController < ApplicationController
         render json: destination
     end
 
-    def show
-        destination = Destination.find_by(id: params[:id])
-        render json: destination, include: [:city, :restaurant, :hotel]
-    end
+   
 end

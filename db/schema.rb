@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_17_132214) do
+ActiveRecord::Schema.define(version: 2021_02_17_174614) do
 
   create_table "destinations", force: :cascade do |t|
     t.string "city"
@@ -33,6 +33,15 @@ ActiveRecord::Schema.define(version: 2021_02_17_132214) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["destination_id"], name: "index_itineraries_on_destination_id"
     t.index ["user_id"], name: "index_itineraries_on_user_id"
+  end
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name"
+    t.string "cuisine"
+    t.string "review"
+    t.integer "destination_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
