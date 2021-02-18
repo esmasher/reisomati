@@ -10,12 +10,13 @@ class ReviewsController < ApplicationController
     end
 
     def create
-        review = Review.create
+        review = Review.new(comment: params[:comment], hotel_id: params[:hotel_id].to_i)
         render json: review
     end
 
-    def delete
+    def destroy
         review = Review.find_by(id: params[:id])
+        review.destroy
         render json: review
     end
 end
