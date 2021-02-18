@@ -11,6 +11,8 @@ Restaurant.destroy_all
 Itinerary.destroy_all
 Destination.destroy_all
 User.destroy_all
+Review.destroy_all
+Hotel.destroy_all
 
 10.times do
     User.create(
