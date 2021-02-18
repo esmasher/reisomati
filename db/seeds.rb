@@ -99,46 +99,162 @@ Hotel.create(destination_id: 5, rating: "4 stars", name: "The Bay Hotel", likes:
 Hotel.create(destination_id: 5, rating: "4 stars", name: "One and Only Cape Town", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108305860-8c5b4680-7170-11eb-8839-706d1039ded4.jpeg")
 Hotel.create(destination_id: 5, rating: "4 stars", name: "Cape Town Marriott Hotel Crystal Towers", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108305946-b7de3100-7170-11eb-962b-be4018f97b2a.jpg")
 
-Hotel.create(destination_id: 6, rating: "5 stars", name: "Aman Tokyo", likes: 0, image: "")
-Hotel.create(destination_id: 6, rating: "5 stars", name: "Shinjuku Granbell Hotel", likes: 0, image: "")
-Hotel.create(destination_id: 6, rating: "5 stars", name: "Shangri-La Hotel, Tokyo", likes: 0, image: "")
+Hotel.create(destination_id: 6, rating: "5 stars", name: "Aman Tokyo", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108399938-49d15280-71e0-11eb-81ad-9f9f176032ed.jpg")
+Hotel.create(destination_id: 6, rating: "5 stars", name: "Shinjuku Granbell Hotel", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400101-75ecd380-71e0-11eb-817c-416e42cc0f6e.jpg")
+Hotel.create(destination_id: 6, rating: "5 stars", name: "Shangri-La Hotel, Tokyo", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400303-ab91bc80-71e0-11eb-8790-c606c02e74e0.jpg")
 
-Hotel.create(destination_id: 7, rating: "3 stars", name: "Hilton Auckland", likes: 0, image: "")
-Hotel.create(destination_id: 7, rating: "4 stars", name: "The Grand By SkyCity", likes: 0, image: "")
-Hotel.create(destination_id: 7, rating: "5 stars", name: "Hotel DeBrett", likes: 0, image: "")
+Hotel.create(destination_id: 7, rating: "3 stars", name: "Hilton Auckland", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400506-e1cf3c00-71e0-11eb-8c68-eeb21b26b76d.jpeg")
+Hotel.create(destination_id: 7, rating: "4 stars", name: "The Grand By SkyCity", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400585-fad7ed00-71e0-11eb-867b-61f4cc6024a6.jpg")
+Hotel.create(destination_id: 7, rating: "5 stars", name: "Hotel DeBrett", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400651-10e5ad80-71e1-11eb-9bcc-e3e9a2b23754.jpg")
 
-Hotel.create(destination_id: 8, rating: "4 stars", name: "The St. Regis, Cairo", likes: 0, image: "")
-Hotel.create(destination_id: 8, rating: "4 stars", name: "Dusit Thani LakeView Cairo", likes: 0, image: "")
-Hotel.create(destination_id: 8, rating: "5 stars", name: "The Nile Ritz-Carlton, Cairo", likes: 0, image: "")
+Hotel.create(destination_id: 8, rating: "4 stars", name: "The St. Regis, Cairo", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400705-28249b00-71e1-11eb-8e98-d49852ab2609.jpg")
+Hotel.create(destination_id: 8, rating: "4 stars", name: "Dusit Thani LakeView Cairo", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400833-48ecf080-71e1-11eb-9965-d4817985fd00.jpg")
+Hotel.create(destination_id: 8, rating: "5 stars", name: "The Nile Ritz-Carlton, Cairo", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108400970-733eae00-71e1-11eb-8e7e-99532d6dcecd.jpeg")
 
-Hotel.create(destination_id: 9, rating: "4 stars", name: "Four Seasons Hotel Buenos Aires", likes: 0, image: "")
-Hotel.create(destination_id: 9, rating: "4 stars", name: "Alvear Palace Hotel", likes: 0, image: "")
-Hotel.create(destination_id: 9, rating: "5 stars", name: "Algodon Mansion", likes: 0, image: "")
+Hotel.create(destination_id: 9, rating: "4 stars", name: "Four Seasons Hotel Buenos Aires", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401032-86517e00-71e1-11eb-8164-bc1e57a5ce3b.jpg")
+Hotel.create(destination_id: 9, rating: "4 stars", name: "Alvear Palace Hotel", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401148-a97c2d80-71e1-11eb-9ac8-9f64f5ceb3fb.jpg")
+Hotel.create(destination_id: 9, rating: "5 stars", name: "Algodon Mansion", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401222-bc8efd80-71e1-11eb-88f9-b5c7801eebd2.jpg")
 
-Hotel.create(destination_id: 10, rating: "3 stars", name: "Park Hotel", likes: 0, image: "")
-Hotel.create(destination_id: 10, rating: "3 stars", name: "Golden Tulip Bishkek Hotel", likes: 0, image: "")
-Hotel.create(destination_id: 10, rating: "4 stars", name: "Plaza Hotel Bishkek", likes: 0, image: "")
+Hotel.create(destination_id: 10, rating: "3 stars", name: "Park Hotel", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401311-d4ff1800-71e1-11eb-841e-1019aa40e837.jpg")
+Hotel.create(destination_id: 10, rating: "3 stars", name: "My Hotel Bishkek", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401579-1a234a00-71e2-11eb-9edd-0223b90fd63b.jpg")
+Hotel.create(destination_id: 10, rating: "4 stars", name: "Plaza Hotel Bishkek", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401798-5a82c800-71e2-11eb-9598-992be98bdce1.jpg")
 
-Review.create(hotel_id: 1, comment: "Great Stay at the Ritz-Carlton Berlin, the staff was friendly and the rooms were clean")
-Review.create(hotel_id: 1, comment: "comment 1")
-Review.create(hotel_id: 1, comment: "comment 2")
-
-Review.create(hotel_id: 2, comment: "Great Stay at the Ritz-Carlton Berlin, the staff was friendly and the rooms were clean")
-Review.create(hotel_id: 2, comment: "comment 1")
-Review.create(hotel_id: 2, comment: "comment 2")
-
-Review.create(hotel_id: 3, comment: "Great Stay at the Ritz-Carlton Berlin, the staff was friendly and the rooms were clean")
-Review.create(hotel_id: 3, comment: "comment 1")
-Review.create(hotel_id: 3, comment: "comment 2")
-
-
-
-
-
-
+reviews_array = ["Great Stay! Our room was clean and staff was friendly", 
+    "My family had a great time at the hotel, Tasha was wonderful at check-in and upgraded our room", 
+    "Horrible from the moment we checked in, to the pool and then the room everything was horrible not worth my money at all", 
+    "Staff was amazing, the entertainment crew went above and beyond. The food was always on point", 
+    "Had a great getaway for our anniversary. The service was phenomenal", 
+    "We loved the entire property and staff. We will be back!", 
+    "The staff are great. Always very friendly and accommodating", 
+    "This would not be my last time staying there. Going back soon.", 
+    "The hotel was very dirty, we had to change rooms, will not be going back!", 
+    "The service was wonderful, but the room left much to be desired",
+    "Great property definitely 4 stars",
+    "My husband and I cannot wait to come back",
+    "10/10 would recommend",
+    "We already booked our next stay"
+]
 
 
+Review.create(hotel_id: 1, comment: reviews_array.sample)
+Review.create(hotel_id: 1, comment: reviews_array.sample)
+Review.create(hotel_id: 1, comment: reviews_array.sample)
 
+Review.create(hotel_id: 2, comment: reviews_array.sample)
+Review.create(hotel_id: 2, comment: reviews_array.sample)
+Review.create(hotel_id: 2, comment: reviews_array.sample)
+
+Review.create(hotel_id: 3, comment: reviews_array.sample)
+Review.create(hotel_id: 3, comment: reviews_array.sample)
+Review.create(hotel_id: 3, comment: reviews_array.sample)
+
+Review.create(hotel_id: 4, comment: reviews_array.sample)
+Review.create(hotel_id: 4, comment: reviews_array.sample)
+Review.create(hotel_id: 4, comment: reviews_array.sample)
+
+Review.create(hotel_id: 5, comment: reviews_array.sample)
+Review.create(hotel_id: 5, comment: reviews_array.sample)
+Review.create(hotel_id: 5, comment: reviews_array.sample)
+
+Review.create(hotel_id: 6, comment: reviews_array.sample)
+Review.create(hotel_id: 6, comment: reviews_array.sample)
+Review.create(hotel_id: 6, comment: reviews_array.sample)
+
+Review.create(hotel_id: 7, comment: reviews_array.sample)
+Review.create(hotel_id: 7, comment: reviews_array.sample)
+Review.create(hotel_id: 7, comment: reviews_array.sample)
+
+Review.create(hotel_id: 8, comment: reviews_array.sample)
+Review.create(hotel_id: 8, comment: reviews_array.sample)
+Review.create(hotel_id: 8, comment: reviews_array.sample)
+
+Review.create(hotel_id: 9, comment: reviews_array.sample)
+Review.create(hotel_id: 9, comment: reviews_array.sample)
+Review.create(hotel_id: 9, comment: reviews_array.sample)
+
+Review.create(hotel_id: 10, comment: reviews_array.sample)
+Review.create(hotel_id: 10, comment: reviews_array.sample)
+Review.create(hotel_id: 10, comment: reviews_array.sample)
+
+Review.create(hotel_id: 11, comment: reviews_array.sample)
+Review.create(hotel_id: 11, comment: reviews_array.sample)
+Review.create(hotel_id: 11, comment: reviews_array.sample)
+
+Review.create(hotel_id: 12, comment: reviews_array.sample)
+Review.create(hotel_id: 12, comment: reviews_array.sample)
+Review.create(hotel_id: 12, comment: reviews_array.sample)
+
+Review.create(hotel_id: 13, comment: reviews_array.sample)
+Review.create(hotel_id: 13, comment: reviews_array.sample)
+Review.create(hotel_id: 13, comment: reviews_array.sample)
+
+Review.create(hotel_id: 14, comment: reviews_array.sample)
+Review.create(hotel_id: 14, comment: reviews_array.sample)
+Review.create(hotel_id: 14, comment: reviews_array.sample)
+
+Review.create(hotel_id: 15, comment: reviews_array.sample)
+Review.create(hotel_id: 15, comment: reviews_array.sample)
+Review.create(hotel_id: 15, comment: reviews_array.sample)
+
+Review.create(hotel_id: 16, comment: reviews_array.sample)
+Review.create(hotel_id: 16, comment: reviews_array.sample)
+Review.create(hotel_id: 16, comment: reviews_array.sample)
+
+Review.create(hotel_id: 17, comment: reviews_array.sample)
+Review.create(hotel_id: 17, comment: reviews_array.sample)
+Review.create(hotel_id: 17, comment: reviews_array.sample)
+
+Review.create(hotel_id: 18, comment: reviews_array.sample)
+Review.create(hotel_id: 18, comment: reviews_array.sample)
+Review.create(hotel_id: 18, comment: reviews_array.sample)
+
+Review.create(hotel_id: 19, comment: reviews_array.sample)
+Review.create(hotel_id: 19, comment: reviews_array.sample)
+Review.create(hotel_id: 19, comment: reviews_array.sample)
+
+Review.create(hotel_id: 20, comment: reviews_array.sample)
+Review.create(hotel_id: 20, comment: reviews_array.sample)
+Review.create(hotel_id: 20, comment: reviews_array.sample)
+
+Review.create(hotel_id: 21, comment: reviews_array.sample)
+Review.create(hotel_id: 21, comment: reviews_array.sample)
+Review.create(hotel_id: 21, comment: reviews_array.sample)
+
+Review.create(hotel_id: 22, comment: reviews_array.sample)
+Review.create(hotel_id: 22, comment: reviews_array.sample)
+Review.create(hotel_id: 22, comment: reviews_array.sample)
+
+Review.create(hotel_id: 23, comment: reviews_array.sample)
+Review.create(hotel_id: 23, comment: reviews_array.sample)
+Review.create(hotel_id: 23, comment: reviews_array.sample)
+
+Review.create(hotel_id: 24, comment: reviews_array.sample)
+Review.create(hotel_id: 24, comment: reviews_array.sample)
+Review.create(hotel_id: 24, comment: reviews_array.sample)
+
+Review.create(hotel_id: 25, comment: reviews_array.sample)
+Review.create(hotel_id: 25, comment: reviews_array.sample)
+Review.create(hotel_id: 25, comment: reviews_array.sample)
+
+Review.create(hotel_id: 26, comment: reviews_array.sample)
+Review.create(hotel_id: 26, comment: reviews_array.sample)
+Review.create(hotel_id: 26, comment: reviews_array.sample)
+
+Review.create(hotel_id: 27, comment: reviews_array.sample)
+Review.create(hotel_id: 27, comment: reviews_array.sample)
+Review.create(hotel_id: 27, comment: reviews_array.sample)
+
+Review.create(hotel_id: 28, comment: reviews_array.sample)
+Review.create(hotel_id: 28, comment: reviews_array.sample)
+Review.create(hotel_id: 28, comment: reviews_array.sample)
+
+Review.create(hotel_id: 29, comment: reviews_array.sample)
+Review.create(hotel_id: 29, comment: reviews_array.sample)
+Review.create(hotel_id: 29, comment: reviews_array.sample)
+
+Review.create(hotel_id: 30, comment: reviews_array.sample)
+Review.create(hotel_id: 30, comment: reviews_array.sample)
+Review.create(hotel_id: 30, comment: reviews_array.sample)
 
 
 puts "After successfully seeding: "
