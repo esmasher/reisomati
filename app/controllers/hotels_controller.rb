@@ -9,4 +9,9 @@ class HotelsController < ApplicationController
         render json: hotel
     end
 
+    def update
+        hotel = Hotel.find_by(id: params[:id])
+        hotel.update(likes: params[:likes])
+        render json: hotel
+    end
 end
