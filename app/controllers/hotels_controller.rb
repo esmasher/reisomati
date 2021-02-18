@@ -1,5 +1,5 @@
 class HotelsController < ApplicationController
-    def index 
+    def index
         hotels = Hotel.all
         render json: hotels
     end
@@ -14,4 +14,19 @@ class HotelsController < ApplicationController
         hotel.update(likes: params[:likes])
         render json: hotel
     end
+    
+    def create
+        hotel = Hotel.create(name: params[:name], rating: params[:rating], destination_id: params[:destination_id])
+        render json: hotel
+    end
+
+    def destroy
+        hotel = Hotel.find_by(id: params[:id])
+        hotel.destroy
+
+        render json: { message: 'success' }
+    end
+
+
+
 end

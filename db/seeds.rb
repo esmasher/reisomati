@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-Restaurant.destroy_all
 Itinerary.destroy_all
-Destination.destroy_all
+Restaurant.destroy_all
 User.destroy_all
 Review.destroy_all
 Hotel.destroy_all
+Destination.destroy_all
 
 10.times do
     User.create(
@@ -54,7 +54,7 @@ end
  user_id = User.all.map { |user| user.id }
  destination_id = Destination.all.map { |destination| destination.id }
 
- 10.times do
+ 20.times do
     Restaurant.create(
         name: Faker::Restaurant.unique.name,
         cuisine: Faker::Restaurant.type,
@@ -120,6 +120,47 @@ Hotel.create(destination_id: 9, rating: "5 stars", name: "Algodon Mansion", like
 Hotel.create(destination_id: 10, rating: "3 stars", name: "Park Hotel", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401311-d4ff1800-71e1-11eb-841e-1019aa40e837.jpg")
 Hotel.create(destination_id: 10, rating: "3 stars", name: "My Hotel Bishkek", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401579-1a234a00-71e2-11eb-9edd-0223b90fd63b.jpg")
 Hotel.create(destination_id: 10, rating: "4 stars", name: "Plaza Hotel Bishkek", likes: 0, image: "https://user-images.githubusercontent.com/73184313/108401798-5a82c800-71e2-11eb-9598-992be98bdce1.jpg")
+
+
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "The Ritz-Carlton, Berlin" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Hotel Zoo Berlin")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "SO/ Berlin Das Stue")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Burj Al Arab" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "W Dubai The Palm")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Palazzo Versace Dubai")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "destination_id.sample stars", name: "Novotel Phucket City" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Woo Gallery and Botique Hotel")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "The Blanket")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Hôtel des Grands Hommes" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Pullman Paris Eiffel Tower")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Four Seasons Hotel George V, Paris")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "The Bay Hotel" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "One and Only Cape Town")
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Cape Town Marriott Hotel Crystal Towers")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Aman Tokyo" )
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Shinjuku Granbell Hotel")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Shangri-La Hotel, Tokyo")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "3 stars", name: "Hilton Auckland" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "The Grand By SkyCity")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Hotel DeBrett")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "The St. Regis, Cairo" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Dusit Thani LakeView Cairo")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "The Nile Ritz-Carlton, Cairo")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Four Seasons Hotel Buenos Aires" )
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Alvear Palace Hotel")
+# Hotel.create(destination_id: destination_id.sample, rating: "5 stars", name: "Algodon Mansion")
+
+# Hotel.create(destination_id: destination_id.sample, rating: "3 stars", name: "Park Hotel" )
+# Hotel.create(destination_id: destination_id.sample, rating: "3 stars", name: "Golden Tulip Bishkek Hotel")
+# Hotel.create(destination_id: destination_id.sample, rating: "4 stars", name: "Plaza Hotel Bishkek")
 
 reviews_array = ["Great Stay! Our room was clean and staff was friendly", 
     "My family had a great time at the hotel, Tasha was wonderful at check-in and upgraded our room", 
@@ -266,3 +307,4 @@ puts "#{Itinerary.all.count} itineraries"
 puts "#{Hotel.all.count} Hotels"
 puts "#{Review.all.count} reviews"
 puts "#{Restaurant.all.count} restaurants"
+
