@@ -120,6 +120,21 @@ Hotel.create(destination_id: 10, rating: "3 stars", name: "Golden Tulip Bishkek 
 Hotel.create(destination_id: 10, rating: "4 stars", name: "Plaza Hotel Bishkek", likes: 0, image: "")
 
 Review.create(hotel_id: 1, comment: "Great Stay at the Ritz-Carlton Berlin, the staff was friendly and the rooms were clean")
+Review.create(hotel_id: 1, comment: "comment 1")
+Review.create(hotel_id: 1, comment: "comment 2")
+
+Review.create(hotel_id: 2, comment: "Great Stay at the Ritz-Carlton Berlin, the staff was friendly and the rooms were clean")
+Review.create(hotel_id: 2, comment: "comment 1")
+Review.create(hotel_id: 2, comment: "comment 2")
+
+Review.create(hotel_id: 3, comment: "Great Stay at the Ritz-Carlton Berlin, the staff was friendly and the rooms were clean")
+Review.create(hotel_id: 3, comment: "comment 1")
+Review.create(hotel_id: 3, comment: "comment 2")
+
+
+
+
+
 
 
 
