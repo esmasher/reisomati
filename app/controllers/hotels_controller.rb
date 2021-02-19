@@ -14,7 +14,7 @@ class HotelsController < ApplicationController
         hotel.update(likes: params[:likes])
         render json: hotel
     end
-    
+
     def create
         hotel = Hotel.create(name: params[:name], rating: params[:rating], destination_id: params[:destination_id])
         render json: hotel
@@ -24,7 +24,7 @@ class HotelsController < ApplicationController
         hotel = Hotel.find_by(id: params[:id])
         hotel.destroy
 
-        render json: { message: 'success' }
+        render json: { message: 'Your Hotel has been removed' }
     end
 
 
