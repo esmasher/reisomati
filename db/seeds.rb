@@ -54,7 +54,7 @@ end
  user_id = User.all.map { |user| user.id }
  destination_id = Destination.all.map { |destination| destination.id }
 
- 20.times do
+ 50.times do
     Restaurant.create(
         name: Faker::Restaurant.unique.name,
         cuisine: Faker::Restaurant.type,
